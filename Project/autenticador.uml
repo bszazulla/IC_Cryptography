@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_rEPkoA1VEeWlsbULoKJjRA" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_rEQLsA1VEeWlsbULoKJjRA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3SBJEA1VEeWlsbULoKJjRA" name="BasicAuthenticatorApp">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WuL1AA1WEeWlsbULoKJjRA" name="main"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_o6XRkA1WEeWlsbULoKJjRA" name="SecurityManager">
+    <generalization xmi:type="uml:Generalization" xmi:id="_37UgkA1cEeWlsbULoKJjRA" general="_CqC70A1XEeWlsbULoKJjRA"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uwIoA1cEeWlsbULoKJjRA" general="_KOAcgA1XEeWlsbULoKJjRA"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_6TsGIA1cEeWlsbULoKJjRA" general="_QcvPoA1XEeWlsbULoKJjRA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i7f3sA1cEeWlsbULoKJjRA" name="factory&lt;T>" type="_YXDTcA1aEeWlsbULoKJjRA" association="_i7nMcA1cEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i7f3sQ1cEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i7f3sg1cEeWlsbULoKJjRA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ALYc0A1eEeWlsbULoKJjRA" name="securityUtils" type="_jx3mYA1ZEeWlsbULoKJjRA" association="_ALYc0w1eEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ALYc0Q1eEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ALYc0g1eEeWlsbULoKJjRA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CqC70A1XEeWlsbULoKJjRA" name="Authenticator"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KOAcgA1XEeWlsbULoKJjRA" name="Authorizer">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_P1ozYA1XEeWlsbULoKJjRA" name="Authenticator"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QcvPoA1XEeWlsbULoKJjRA" name="SessionManager">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="__L5IAA1YEeWlsbULoKJjRA" name="SessionManager"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jx3mYA1ZEeWlsbULoKJjRA" name="SecurityUtils">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_puFtMA1ZEeWlsbULoKJjRA" name="securityManager" visibility="private" isStatic="true" type="_o6XRkA1WEeWlsbULoKJjRA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6A2xEA1ZEeWlsbULoKJjRA" name="getSubject" isStatic="true">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_84u9IA1ZEeWlsbULoKJjRA" type="_WNDBYA1XEeWlsbULoKJjRA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DS9OkA1aEeWlsbULoKJjRA" name="setSecurityManager" isStatic="true">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_HZ-uUA1aEeWlsbULoKJjRA" name="securityManager" type="_o6XRkA1WEeWlsbULoKJjRA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_O3oLoA1aEeWlsbULoKJjRA" name="getSecurityManager" isStatic="true">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qw1I8A1aEeWlsbULoKJjRA" type="_o6XRkA1WEeWlsbULoKJjRA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jhJ0YA1aEeWlsbULoKJjRA" name="T"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QzAdwA1bEeWlsbULoKJjRA" name="UsernamePasswordToken">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bB7v4A1bEeWlsbULoKJjRA" name="username" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bUNLoA1bEeWlsbULoKJjRA" name="password" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nUiJ8A1bEeWlsbULoKJjRA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nUiJ8Q1bEeWlsbULoKJjRA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bni-YA1bEeWlsbULoKJjRA" name="rememberMe" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0tS60A1bEeWlsbULoKJjRA" name="host" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q1l64A1fEeWlsbULoKJjRA" name="basicAuthenticatorApp" type="_3SBJEA1VEeWlsbULoKJjRA" association="_Q1oXIA1fEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q1l64Q1fEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q1l64g1fEeWlsbULoKJjRA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9j5vIA1bEeWlsbULoKJjRA" name="clear"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__on_8A1bEeWlsbULoKJjRA" name="toString">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_CnCR0A1cEeWlsbULoKJjRA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HOAc8A1cEeWlsbULoKJjRA" name="getters&amp;setters"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i7nMcA1cEeWlsbULoKJjRA" memberEnd="_i7nMcQ1cEeWlsbULoKJjRA _i7f3sA1cEeWlsbULoKJjRA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_i7nMcQ1cEeWlsbULoKJjRA" name="securityManager" type="_o6XRkA1WEeWlsbULoKJjRA" association="_i7nMcA1cEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i7nMcg1cEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i7nMcw1cEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ALYc0w1eEeWlsbULoKJjRA" memberEnd="_ALYc1A1eEeWlsbULoKJjRA _ALYc0A1eEeWlsbULoKJjRA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ALYc1A1eEeWlsbULoKJjRA" name="securityManager" type="_o6XRkA1WEeWlsbULoKJjRA" association="_ALYc0w1eEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ALYc1Q1eEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ALYc1g1eEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_WNDBYA1XEeWlsbULoKJjRA" name="Subject">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rBzNQA1YEeWlsbULoKJjRA" name="isAuthenticated">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ssM5kA1YEeWlsbULoKJjRA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BzWAgA1bEeWlsbULoKJjRA" name="login">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YEbgIA1fEeWlsbULoKJjRA" name="userCredentials" type="_QzAdwA1bEeWlsbULoKJjRA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YXDTcA1aEeWlsbULoKJjRA" name="Factory&lt;T>">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bAmIkA1aEeWlsbULoKJjRA" name="getInstance">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rhfIAA1aEeWlsbULoKJjRA" type="_jhJ0YA1aEeWlsbULoKJjRA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uVPsQA1eEeWlsbULoKJjRA" memberEnd="_uVPsRA1eEeWlsbULoKJjRA _uVPsQQ1eEeWlsbULoKJjRA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uVPsQQ1eEeWlsbULoKJjRA" name="securityUtils" type="_jx3mYA1ZEeWlsbULoKJjRA" association="_uVPsQA1eEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uVPsQg1eEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uVPsQw1eEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uVPsRA1eEeWlsbULoKJjRA" name="subject" type="_WNDBYA1XEeWlsbULoKJjRA" association="_uVPsQA1eEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uVPsRQ1eEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uVPsRg1eEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_z7EsUA1eEeWlsbULoKJjRA" memberEnd="_z7EsVA1eEeWlsbULoKJjRA _z7EsUQ1eEeWlsbULoKJjRA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_z7EsUQ1eEeWlsbULoKJjRA" name="basicAuthenticatorApp" type="_3SBJEA1VEeWlsbULoKJjRA" association="_z7EsUA1eEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7EsUg1eEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z7EsUw1eEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_z7EsVA1eEeWlsbULoKJjRA" name="factory&lt;T>" type="_YXDTcA1aEeWlsbULoKJjRA" association="_z7EsUA1eEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7EsVQ1eEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z7EsVg1eEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4WNa4A1eEeWlsbULoKJjRA" name="TokenGenerator">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LkjfEA1fEeWlsbULoKJjRA" name="basicAuthenticatorApp" type="_3SBJEA1VEeWlsbULoKJjRA" association="_Lkl7UA1fEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LkjfEQ1fEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LkjfEg1fEeWlsbULoKJjRA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ALcRwA1fEeWlsbULoKJjRA" name="main"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_A-zBUA1fEeWlsbULoKJjRA" name="generateToken">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FI64YA1fEeWlsbULoKJjRA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Lkl7UA1fEeWlsbULoKJjRA" memberEnd="_Lkl7UQ1fEeWlsbULoKJjRA _LkjfEA1fEeWlsbULoKJjRA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Lkl7UQ1fEeWlsbULoKJjRA" name="tokenGenerator" type="_4WNa4A1eEeWlsbULoKJjRA" association="_Lkl7UA1fEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lkl7Ug1fEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lkl7Uw1fEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_O-1NkA1fEeWlsbULoKJjRA" memberEnd="_O-1NlA1fEeWlsbULoKJjRA _O-1NkQ1fEeWlsbULoKJjRA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O-1NkQ1fEeWlsbULoKJjRA" name="basicAuthenticatorApp" type="_3SBJEA1VEeWlsbULoKJjRA" association="_O-1NkA1fEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O-1Nkg1fEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O-1Nkw1fEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O-1NlA1fEeWlsbULoKJjRA" name="subject" type="_WNDBYA1XEeWlsbULoKJjRA" association="_O-1NkA1fEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O-1NlQ1fEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O-1Nlg1fEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Q1oXIA1fEeWlsbULoKJjRA" memberEnd="_Q1oXIQ1fEeWlsbULoKJjRA _Q1l64A1fEeWlsbULoKJjRA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Q1oXIQ1fEeWlsbULoKJjRA" name="usernamePasswordToken" type="_QzAdwA1bEeWlsbULoKJjRA" association="_Q1oXIA1fEeWlsbULoKJjRA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q1oXIg1fEeWlsbULoKJjRA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q1oXIw1fEeWlsbULoKJjRA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
